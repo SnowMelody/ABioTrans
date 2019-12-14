@@ -41,13 +41,15 @@ ABioTrans can now be launched via the shortcut instead of running the R script i
 
 ### Layout
 The layout of ABioTrans has been reorganised into 4 tab headings: ```Home```, ```Preprocessing```, ```Original``` and ```New```. ```Original``` is a dropdown selection which contains all initial features and updates applied to them, while ```New``` contains newly added features.
+![alt text](https://github.com/SnowMelody/ABioTrans/blob/master/ABT_updated/screenshots/Layout.png)
 
 ### Heatscatter
 In the updated heatscatter, the plot can be navigated interactively. Hovering the mouse over a point displays the sample names and their corresponding values. Additionally, the plot can be zoomed in/out.
+![alt text](https://github.com/SnowMelody/ABioTrans/blob/master/ABT_updated/screenshots/Heatscatter.png)
 
 ### Sparse PCA
 In the updated PCA, an option has been added to toggle between using PCA or sparse PCA.
-
+![alt text](https://github.com/SnowMelody/ABioTrans/blob/master/ABT_updated/screenshots/Sparse%20PCA.png)
 
 ## New features
 
@@ -71,14 +73,17 @@ t-SNE directional plots are saved in the ```tsne_output``` folder after each run
 
 ### t-SNE directional plot demo
 First, launch ABioTrans and open the ```test data``` folder. Under ABioTrans' ```Home``` tab, select ```Normalised file```. Load ```yeast_nm.csv``` as the normalised expression file and ```yeast_meta``` as the meta data file. Press on ```Submit``` once both files have been loaded. Next, click on the ```Preprocessing``` tab. Input **0** for ```Min. value``` and **1** for ```Min. columns```. Click on ```Submit``` and wait for the preprocessing to be done. Then, click on the ```New``` tab and choose ```t-SNE``` from the dropdown selection. Following which, input **25** for ```Perplexity value```, **4** for ```No. of PCs```, **6** for ```No. of clusters``` and **None** for ```Transformation```. Click on ```Submit```. The t-SNE plot once generated should as such:
+![alt text](https://github.com/SnowMelody/ABioTrans/blob/master/ABT_updated/screenshots/t-SNE_1.png)
 
 Feel free to interact with the plot. After generating paths of selected points, it might look like this:
+![alt text](https://github.com/SnowMelody/ABioTrans/blob/master/ABT_updated/screenshots/t-SNE_2.png)
  
 
 ### Scatter overlay
 By using the overlap of 2 scatter plots, differential genes from gene expression data can be identified. More information on the original implementation can be found [here.](https://github.com/SnowMelody/ScatterOverlay) </br>
 
 There are 4 parameters to control the scatter plots. They correspond to the samples used in the x and y axes of the first and second scatter.
+![alt text](https://github.com/SnowMelody/ABioTrans/blob/master/ABT_updated/screenshots/Overlay.png)
 
 ### Clustering with random forest
 While generally used for classification and regression problems, here random forest is used for clustering. The plot can be navigated in a similar manner to the updated heatscatter. </br>
@@ -86,6 +91,7 @@ While generally used for classification and regression problems, here random for
 There are 2 parameters to control the random forest cluster plot. ```No. of trees``` defines the size of the forest. ```No. of clusters``` classifies the samples into the specified cluster size. </br>
 
 The ```diff_genes.csv``` file will be generated after each run, containing names of differential genes.
+![alt text](https://github.com/SnowMelody/ABioTrans/blob/master/ABT_updated/screenshots/Random%20forest.png)
 
 ### SOM
 5 types of SOM plots are available for use: </br>
@@ -96,6 +102,7 @@ The ```diff_genes.csv``` file will be generated after each run, containing names
 ```Cluster```: Uses hierarchical clustering to cluster the SOM </br>
 
 There are 4 parameters to control the SOM plots. ```Samples used``` determines the sample chosen for the plots, either all samples or individual ones. ```No. of horizontal grids``` and ```No. of vertical grids``` changes the number of nodes used in the SOM. ```No. of clusters```  classifies the SOM nodes into the specified cluster size (for cluster plot).
+![alt text](https://github.com/SnowMelody/ABioTrans/blob/master/ABT_updated/screenshots/SOM.png)
 
 
 ## Additional notes
